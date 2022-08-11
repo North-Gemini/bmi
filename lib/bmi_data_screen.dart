@@ -21,33 +21,33 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
       // Body Aplikasi
       body: Column(
         children: [
+
+          // Gender Container
           Expanded(child: Container(
             child: Row(
               children: [
 
-                /* Kolom Tombol Male */
-                Expanded(
-                  child: Column(
-                      children: const [
-                        Icon(Icons.male_rounded),
-                        Text('Male'),
-                      ]
-                  ),
-                ),
+                // ==== Male card ====
+                Expanded(child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(Icons.male_rounded),
+                    Text('Male'),
+                  ],
+                )),
 
-                /* Kolom Tombol Female */
-                Expanded(
-                  child:
-                    Column(
-                        children: const [
-                          Icon(Icons.female_rounded),
-                          Text('Female'),
-                        ]
-                    ),
-                )
-
-            ],),
+                // ==== Female card ====
+                Expanded(child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(Icons.female_rounded),
+                    Text('Female'),
+                  ],
+                )),
+              ],
+            ),
           )),
+
           Expanded(child: Container(
             color: Colors.brown,
           )),
